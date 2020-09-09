@@ -13,7 +13,7 @@ public class HelloRestController {
 	
 	@GetMapping("/workout")
 	public String workout() {
-		return "Do workout atlest 5 days a week!!!";
+		return "Do WORKOUT atlest 5 day a week!!!!";
 	}
 	
 }
