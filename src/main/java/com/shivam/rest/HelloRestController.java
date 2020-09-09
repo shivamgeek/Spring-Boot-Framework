@@ -11,4 +11,9 @@ public class HelloRestController {
 		return "Hello from Spring Boot";
 	}
 	
+	@GetMapping("/workout")
+	public String workout() {
+		return "Do workout atlest 5 days a week!!!";
+	}
+	
 }
