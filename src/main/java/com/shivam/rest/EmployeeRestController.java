@@ -8,19 +8,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.shivam.Entity.Employee;
-import com.shivam.dao.EmployeeDAO;
+import com.shivam.service.EmployeeService;
 
 @RestController
 @RequestMapping("/api")
 public class EmployeeRestController {
 	
 	@Autowired
-	private EmployeeDAO employeeDao;
+	private EmployeeService employeeService;
 
 	
 	@GetMapping("/employees")
 	public List<Employee> getAllEmployees(){
-		return employeeDao.findAll();
+		return employeeService.findAll();
 	}
 	
 }
