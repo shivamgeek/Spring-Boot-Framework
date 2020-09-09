@@ -13,12 +13,12 @@ import org.springframework.transaction.annotation.Transactional;
 import com.shivam.Entity.Employee;
 
 @Repository
-public class EmployeeDAOImpl_Hibernate implements EmployeeDAO{
+public class EmployeeDAOHibernateImpl implements EmployeeDAO{
 
 	private EntityManager entityManager;
 	
 	@Autowired
-	public EmployeeDAOImpl_Hibernate(EntityManager entityManager) {
+	public EmployeeDAOHibernateImpl(EntityManager entityManager) {
 		this.entityManager = entityManager;
 	}
 	
